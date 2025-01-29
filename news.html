@@ -1,0 +1,209 @@
+.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Events - ECHS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="QATARDAY5.JPG" alt="Qatar Day Celebration" class="logo-image">
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="admissions.html">Admissions</a>
+            <a href="programmes.html">Programmes</a>
+            <a href="campus-tour.html" class="active">Campus Tour</a>
+            <a href="news.html">News & Events</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="news-section">
+            <h1 class="section-title">News & Events</h1>
+            
+            <!-- Featured News -->
+            <div class="featured-news" data-aos="fade-up">
+                <div class="news-card featured">
+                    <img src="https://via.placeholder.com/800x400" alt="Science Fair">
+                    <div class="news-content">
+                        <div class="news-date">
+                            <span class="day">15</span>
+                            <span class="month">Jan</span>
+                        </div>
+                        <h2>Science Fair 2025</h2>
+                        <p>Join us for our annual Science Fair showcasing innovative student projects. Experience groundbreaking ideas and creative solutions from our talented students.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- News Grid -->
+            <div class="news-grid">
+                <div class="news-card" data-aos="fade-up">
+                    <img src="ABC.png" alt="THIMUN Event" onclick="openModal('ABC.png')">
+                    <div class="news-date">
+                        <span class="day">28-31</span>
+                        <span class="month">Jan</span>
+                    </div>
+                    <h3>THIMUN Conference 2025</h3>
+                    <p>🌍 Join us for the prestigious THIMUN Conference! Our students will debate global issues, collaborate with peers worldwide, and develop leadership skills. #THIMUN2025 #GlobalLeaders</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+
+                <div class="news-card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://via.placeholder.com/400x300" alt="Arts Exhibition">
+                    <div class="news-date">
+                        <span class="day">25</span>
+                        <span class="month">Jan</span>
+                    </div>
+                    <h3>Arts Exhibition</h3>
+                    <p>Experience creativity at our annual student art showcase.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+
+                <div class="news-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://via.placeholder.com/400x300" alt="Sports Day">
+                    <div class="news-date">
+                        <span class="day">30</span>
+                        <span class="month">Jan</span>
+                    </div>
+                    <h3>Annual Sports Day</h3>
+                    <p>Join us for a day of athletic excellence and team spirit.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+
+                <div class="news-card" data-aos="fade-up">
+                    <div class="photo-carousel">
+                        <img src="QATARDAY1.JPG" alt="Qatar National Day Celebration" class="carousel-image active" onclick="openModal('QATARDAY1.JPG')">
+                        <img src="QATARDAY2.JPG" alt="Qatar National Day Celebration" class="carousel-image" onclick="openModal('QATARDAY2.JPG')">
+                        <img src="QATARDAY3.JPG" alt="Qatar National Day Celebration" class="carousel-image" onclick="openModal('QATARDAY3.JPG')">
+                        <img src="QATARDAY4.JPG" alt="Qatar National Day Celebration" class="carousel-image" onclick="openModal('QATARDAY4.JPG')">
+                        <button class="carousel-button left" onclick="prevPhoto()">&#10094;</button>
+                        <button class="carousel-button right" onclick="nextPhoto()">&#10095;</button>
+                    </div>
+                    <div class="news-date">
+                        <span class="day">18</span>
+                        <span class="month">Dec</span>
+                    </div>
+                    <h3>ECHS Celebrates Qatar National Day</h3>
+                    <p>🇶🇦 Join us as we celebrate Qatar National Day with cultural performances, traditional music, and patriotic displays. Let's honor our heritage and unity! #QatarNationalDay #ECHSPride</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+
+            <!-- Instagram Feed Section -->
+            <section class="instagram-section">
+                <h2 class="section-title">Follow Us on Instagram</h2>
+                <div class="instagram-feed" data-aos="fade-up">
+                    <div class="instagram-post">
+                        <img src="Screenshot2025-01-28at6.28.32PM.png" alt="Event Photo" class="instagram-image">
+                        <div class="instagram-caption">
+                            <p>🎉 Exciting news! Our annual Science Fair is back! Join us on March 15th to explore innovative projects from our talented students. #ECHScienceFair #InnovationAtECHS</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Upcoming Events Calendar -->
+            <section class="events-calendar">
+                <h2 class="section-title">Upcoming Events</h2>
+                <div class="calendar-container" data-aos="fade-up">
+                    <!-- Add your calendar implementation here -->
+                    <div class="event-list">
+                        <div class="event-item">
+                            <div class="event-date">
+                                <span class="month">FEB</span>
+                                <span class="day">05</span>
+                            </div>
+                            <div class="event-details">
+                                <h3>Parent-Teacher Conference</h3>
+                                <p>Annual meeting to discuss student progress</p>
+                                <span class="event-time"><i class="fas fa-clock"></i> 2:00 PM - 6:00 PM</span>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <div class="event-date">
+                                <span class="month">FEB</span>
+                                <span class="day">11</span>
+                            </div>
+                            <div class="event-details">
+                                <h3>National Sports Day</h3>
+                                <p>Campus-wide sports activities and competitions</p>
+                                <span class="event-time"><i class="fas fa-clock"></i> 8:00 AM - 3:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Education City, Doha, Qatar</p>
+                <p><i class="fas fa-phone"></i> +974 XXXX XXXX</p>
+                <p><i class="fas fa-envelope"></i> info@echs.edu.qa</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Academic Calendar</a></li>
+                    <li><a href="#">Student Portal</a></li>
+                    <li><a href="#">Parent Portal</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 ECHS. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Sitemap</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Modal for Expanded Photo -->
+    <div id="photoModal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="expandedPhoto">
+    </div>
+</body>
+</html>
